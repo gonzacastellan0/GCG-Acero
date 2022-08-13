@@ -49,6 +49,12 @@ img {
     color: black;
 }
 
+.header__navbar--links :hover {
+    font-weight: 700;
+    color: red;
+    transition: all 0.5s;
+}
+
 .header__menu {
     display: none;
 }
