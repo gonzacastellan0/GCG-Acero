@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoicon.ico">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="header__container2">
+            <a href="../index.html" class="header__container2--logo">
+                <img src="../img/logow.png" width="100px" >
+            </a>
+        
+            <ul class="header__container2--links">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../secciones/trabajos.html">Trabajos</a>
+                </li>
+                <li>
+                    <a href="../secciones/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="../secciones/contacto.html">Contacto</a>
+                </li>
+            </ul>
+                
+            <ul class="header__container2--login">
+                <li>
+                    <a href="../secciones/registro.html">Registrarse</a>
+                </li>
+                <li>
+                    <p>|</p>
+                </li>
+                <li>
+                    <a href="#login">Login</a>
+                    <div class="login__container">
+                        <div id="login" class="form__login">
+                            <form class="form__login--box">
+                                <label for="correo" class="form__login--label">Direccion de correo electronico:</label>
+                                <input 
+                                    type="email" 
+                                    name="correo" 
+                                    class="form__container--input"
+                                    required/>
+                                <label for="text" class="form__container--label">Contraseña:</label>
+                                <input 
+                                    type="password" 
+                                    name="psw" 
+                                    class="form__container--input"
+                                    required/>
+                                <input type="submit" value="Iniciar Sesion" class="form__container--send"/>
+                                <a href="#" class="form__close--btn">X</a>
+                            </form>            
+                        </div>
+                    </div>
+                </li>
+            </ul>    
+        </div>
+    </header>
+
+    <section class="section__container">
+        <div class="contacto">
+            <h1 class="contacto__title">ENVIANOS TU CONSULTA</h1>   
+            <div class="contacto__links">
+                <a href="instagram.com">
+                    <img src="../img/fblogoblack.png" width="40px">
+                </a>
+                <a href="instagram.com">
+                    <img src="../img/iglogoblack.png" width="40px">
+                </a>
+                <a href="instagram.com">
+                    <img src="../img/wsplogoblack.png" width="40px">
+                </a>    
+            </div>
+        </div>
+        <div class="form__container">
+            <form class="form__container--box">
+                <label 
+                    type="name" 
+                    class="form__container--label">
+                    Nombre y Apellido:
+                </label>
+                <input 
+                    type="text" 
+                    name="nombre" 
+                    class="form__container--input"/>
+                <label 
+                    for="correo" 
+                    class="form__container--label">
+                    Direccion de correo electronico:
+                </label>
+                <input 
+                    type="email" 
+                    name="correo" 
+                    class="form__container--input"/>
+                <label 
+                    for="nombre" 
+                    class="form__container--label">
+                    Telefono:
+                </label>
+                <input
+                    type="tel"
+                    name="tel"
+                    pattern="[0-9]{2}[0-9]{8}"
+                    required
+                    class="form__container--input"
+                    title="El número debe tener 10 caracteres sin guiones ni espacios (Ej: 1187654321 - 1512345678)">
+                <label 
+                    for="txt" 
+                    class="form__container--label">
+                    ¿Cual es su consulta?
+                </label>
+                <textarea 
+                    name="consulta" 
+                    type="txt" 
+                    rows="10" 
+                    cols="50" 
+                    class="form__container--txt">
+                </textarea>
+                
+                <div class="form__container--check">
+                    Aceptar terminos y condiciones
+                    <input 
+                        type="checkbox" 
+                        name="acepta" 
+                        value="1"/>
+                </div>
+                
+                <input 
+                    type="submit" 
+                    value="Enviar" 
+                    class="form__container--send"/>
+                <input 
+                    type="reset" 
+                    value="Borrar texto" 
+                    class="form__container--del"/>
+            </form>
+        </div>
+    </section> 
+</body>
+<footer>
+
+</footer>
+</html>
