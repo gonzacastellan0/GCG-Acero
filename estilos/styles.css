@@ -5,7 +5,8 @@
 * {
    margin: 0;
    padding: 0;
-   box-sizing: border-box 
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
 } /*ajuste para que se vea igual en cada navegador*/
 
 a {
@@ -22,196 +23,117 @@ img {
     max-width: 100%;
 }
 
-.header__navbar {
-    background-color: white;
-    padding: 2%;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
-}
-
-.header__navbar--logo {
-    grid-column: 2 / 3;
-}
-
-.header__navbar--logo img {
+.navbar-brand img {
     width: 100px;
 }
 
-.header__navbar--links {
-    grid-column: 5 / 8;
-    display: flex;
-    justify-content: space-around;
-    
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: black;
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.header__navbar--links :hover {
-    font-weight: 700;
-    color: red;
-    transition: all 0.5s;
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.header__menu {
-    display: none;
-}
-
-.header__menu img {
-    width: 100px;
-}
-
-/*MEDIA QUERY------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 600px) {
-    .header__navbar {
-        position: relative;
-    }
-    
-    .header__menu {
-        display: block;
-        grid-column: 7/ 8;
-        cursor: pointer; 
-        z-index: 1;
-        /*filter: invert(1);*/
-    }
-    
-    .header__navbar--links {
-        display: none;    
-    }
-
-    .header__navbar--links :hover {
-        position: absolute;
-        width: 600px;
-        height: 100vh;
-
-        display: grid;
-        justify-items: center;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-        background-color: red;
-        margin-top: 58em;
-        transform: translateX(170%); 
-        transition: all 1s;
-    }
-
-    .header__navabar--toggle {
-        transform: translateX(-50%);
-    }
-}
-
-/*END MEDIA QUERY---------------------------------------*/
-
-/*SECTION*/
-.section__index {
+#home {
     background-image: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url(../img/bg.jpg);
-    min-height: 90vh;
+    min-height: 100vh;
     max-width: 100%;
     background-size: cover;
     background-position: center;
-
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-}
-
-.container__txt {
-    grid-column: 6 / 11;
-    grid-row: 3 / 7;
-    color: white;
-}
-
-.header__title{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 2em;
-}
-
-.header__title--red {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 50px;
-    color: red;
-    
-    margin-top: -20px;
-}
-
-.header__btn {
-    margin-top: 15px; 
-}
-
-.header__btn :hover {
-    background-color: red;
-    transition: all 0.8s;
-    border: 1px solid red;
-}
-
-.header__btn a {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: white;
-    padding: 15px;
-
-    border: 1px solid white;
-    border-radius: 5px;  
-}
-
-/*MEDIA QUERY------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 768px) {
-    /*SECTION-------------------------------------------*/
-    .container__txt {
-        grid-column: 2 / 11;
-        grid-row: 4 / 7;
-        color: red;
-    }
-
-    .header__title{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        color: white;
-    }
-
-    .header__title--red {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 45px;
-        color: red;
-        
-        margin-top: -15px;
-    }
-}
-/*END MEDIA QUERY------------------------------------------------------------------------------------*/
-
-/*FOOTER------------------------------------------------------------------------------------*/
-.footer {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    justify-items: center;
+    background-attachment: fixed;
+    display: flex;
     align-items: center;
 }
 
-.footer__txt {
-    grid-column: 2 / 8;
+#home h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+#home h2 {
+    font-size:60px;
+    color: #ff3838;
+    font-weight: 700;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+btn {
+    font-size: 12px;
+}
+
+.btn-brand {
+    background-color: #ff3838;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.btn-brand:hover {
+    background-color: brown;
+    color: white;
+}
+
+/*footer-----------------------------------------------------------------------*/
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.footer-top .container h5,
+.footer-top .container h4 {
+    font-weight: 600;
+}
+
+.footer-top .container a,
+.footer-top .container p {
+    font-weight: 500;
     color: black;
 }
 
-.footer__social {
-    grid-column: 2 / 8;
-    margin-top: -5px;
+footer .social-icons img {
+    width: 25px;
 }
 
-.footer__social img {
-    padding: 10px;
+footer .social-icons img:hover {
+    filter: invert(72%) sepia(3%) saturate(3673%) hue-rotate(303deg) brightness(108%) contrast(118%);    
 }
-/*END FOOTER------------------------------------------------------------------------------------*/
+
+footer .footer-links a:hover,
+footer .social-icons a:hover {
+    color: #ffc0cb;
+}
+
+footer .footer-links a {
+    display: block;
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: gray;
+}
+
+/*end footer----------------------------*/
+ 
+/*contacto----------------------------------------------*/
+.contacto {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+form .form-control:focus {
+    box-shadow: none;
+    border-color: #ff3838;
+}
+
+ /*end contacto*/
