@@ -46,24 +46,20 @@ img {
     background-attachment: fixed;
     display: flex;
     align-items: center;
-}
 
-#home h1 {
-    font-size: 30px;
-    color: white;
-    font-weight: 700;
-}
+    h1 {
+        font-size: 30px;
+        color: white;
+        font-weight: 700;
+    }
 
-#home h2 {
-    font-size:60px;
-    color: #ff3838;
-    font-weight: 700;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-btn {
-    font-size: 12px;
+    h2 {
+        font-size:60px;
+        color: #ff3838;
+        font-weight: 700;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
 }
 
 .btn-brand {
@@ -82,40 +78,44 @@ btn {
 .footer-top {
     padding-top: 80px;
     padding-bottom: 30px;
+
+    .container h5,
+    .container h4 {
+        font-weight: 600;
+    }
+
+    .container a,
+    .container p {
+        font-weight: 500;
+        color: black;
+    }
 }
 
-.footer-top .container h5,
-.footer-top .container h4 {
-    font-weight: 600;
+footer {
+    .social-icons img {
+        width: 25px;
+    }
+
+    .social-icons img:hover {
+        filter: invert(72%) sepia(3%) saturate(3673%) hue-rotate(303deg) brightness(108%) contrast(118%);    
+    }
+
+    .footer-links a:hover,
+    .social-icons a:hover {
+        color: #ffc0cb;
+    }
+
+    .footer-links a {
+        display: block;
+    }
+
+    .footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: gray;
+    }
 }
 
-.footer-top .container a,
-.footer-top .container p {
-    font-weight: 500;
-    color: black;
-}
-
-footer .social-icons img {
-    width: 25px;
-}
-
-footer .social-icons img:hover {
-    filter: invert(72%) sepia(3%) saturate(3673%) hue-rotate(303deg) brightness(108%) contrast(118%);    
-}
-
-footer .footer-links a:hover,
-footer .social-icons a:hover {
-    color: #ffc0cb;
-}
-
-footer .footer-links a {
-    display: block;
-}
-
-.footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: gray;
-}
+    
 
 /*end footer----------------------------*/
  
@@ -127,18 +127,20 @@ footer .footer-links a {
     
 }
 
-form .form-control {
-    border-radius: 5px;
-}
+form {
+    .form-control {
+        border-radius: 5px;
+    }
+    
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #ff3838;
+    }
 
-form .form-control:focus {
-    box-shadow: none;
-    border-color: #ff3838;
 }
-
  /*end contacto*/
 
-/*trabajos-----------------------------------*/
+/*trabajos-----------------------------------
 .gallery-item {
     overflow: hidden;
     position: relative;
@@ -173,5 +175,5 @@ form .form-control:focus {
 
 .gallery-item:hover img {
    transform: scale(1.1);
-}
+}*/
 /*end trabajos*/
