@@ -1,0 +1,24 @@
+@mixin mainSection {
+    background-image: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url(../img/bg.jpg);
+    min-height: 100vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-size: 30px;
+        color: white;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size:60px;
+        color: #ff3838;
+        font-weight: 700;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+}

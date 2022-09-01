@@ -57,7 +57,7 @@ img {
   margin-bottom: 20px;
 }
 
-.btn-brand {
+.btn-brand, .btn-brand:hover {
   background-color: #ff3838;
   color: white;
   padding: 20px;
@@ -65,8 +65,11 @@ img {
 }
 
 .btn-brand:hover {
-  background-color: brown;
+  background-color: black;
   color: white;
+  border-radius: 20px;
+  padding: 30px;
+  transition: 1s;
 }
 
 /*footer-----------------------------------------------------------------------*/
