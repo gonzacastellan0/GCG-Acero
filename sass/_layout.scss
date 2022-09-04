@@ -1,0 +1,176 @@
+/*header-----------------------------------------------------------------------*/
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*end header-------------------------------------------------------------------*/
+
+#home {
+    background-image: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url(../img/bg.jpg);
+    min-height: 100vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+
+    @include mainSectionTxt;
+}
+
+@include mainBtnSection;
+
+/*footer-----------------------------------------------------------------------*/
+
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 30px;
+
+    @include footerTxt;
+}
+
+footer {
+    @include footerSocialIcons;
+
+    .footer-links a:hover,
+    .social-icons a:hover {
+        color: #ffc0cb;
+    }
+
+    .footer-links a {
+        display: block;
+    }
+
+    .footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: gray;
+    }
+}
+
+/*end footer-------------------------------------------------------------------*/
+
+.contacto {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;   
+
+    @media (max-width: 992px) {
+        img {
+            display: none;
+        }
+    }
+}
+
+@include formContact;
+
+ /*end contacto-----------------------------------------------------------------*/
+
+/*trabajos----------------------------------------------------------------------*/
+#gallery {
+    margin-top: 100px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img,
+.gallery-item .gallery-info {
+    transition: all 0.4s ease;
+ }
+
+.gallery-info {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #ff3838;
+   display: flex;
+   align-items: flex-end;
+   padding: 30px;
+   opacity: 0;
+}
+
+.gallery-info h3,
+.gallery-info h6 {
+   color: #fff;
+}
+
+.gallery-item:hover .gallery-info {
+   opacity: 1;
+}
+
+.gallery-item:hover img {
+   transform: scale(1.1);
+}
+
+/*end trabajos-------------------------------------------------------------------*/
+
+/*nosotros-----------------------------------------------------------------------*/
+
+.nosotros {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .txtArea {
+        margin-bottom: 50px;
+    }
+
+    .map {
+        width: 600px;
+        height: 465px;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    @media (max-width: 992px) {
+        .map {
+            width: 400px;
+            height: 265px;
+            background: #fff;
+            box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+        }
+    
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}
+
+/*end nosotros-------------------------------------------------------------------*/
+
+/*homedeco-----------------------------------------------------------------------*/
+
+.homedeco {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #ff3838;
+
+    @include homedecoSection;
+    @include homedecoSectionTxt;
+}
+
+/*end homedeco-------------------------------------------------------------------*/

@@ -1,0 +1,43 @@
+@mixin mainBtnSection {
+    .btn-brand {
+        background-color: #ff3838;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    
+    .btn-brand:hover {
+        @extend .btn-brand;
+        background-color: rgb(128, 20, 20);
+    }    
+}
+
+@mixin footerSocialIcons {
+    .social-icons img {
+        width: 25px;
+    }
+
+    .social-icons img:hover {
+        filter: invert(72%) sepia(3%) saturate(3673%) hue-rotate(303deg) brightness(108%) contrast(118%);    
+    }
+}
+
+@mixin formContact {
+    form {
+        .form-control {
+            border-radius: 5px;
+        }
+        
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #ff3838;
+        }
+    }
+}
+
+@mixin homedecoSection {
+    img {
+        width: 300px;
+    }
+}

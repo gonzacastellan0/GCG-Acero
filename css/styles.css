@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*ajuste para que se vea igual en cada navegador*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  text-align: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*header-----------------------------------------------------------------------*/
+.navbar-brand img {
+  width: 100px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*end header-------------------------------------------------------------------*/
+#home {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 16, 16, 0.5)), to(rgba(16, 16, 16, 0.5))), url(../img/bg.jpg);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url(../img/bg.jpg);
+  min-height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#home h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+#home h2 {
+  font-size: 60px;
+  color: #ff3838;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.btn-brand, .btn-brand:hover {
+  background-color: #ff3838;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-brand:hover {
+  background-color: rgb(128, 20, 20);
+}
+
+/*footer-----------------------------------------------------------------------*/
+.footer-top {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.footer-top .container h5,
+.footer-top .container h4 {
+  font-weight: 600;
+}
+.footer-top .container a,
+.footer-top .container p {
+  font-weight: 500;
+}
+.footer-top .container a,
+.footer-top .container p {
+  color: black;
+}
+
+footer .social-icons img {
+  width: 25px;
+}
+footer .social-icons img:hover {
+  -webkit-filter: invert(72%) sepia(3%) saturate(3673%) hue-rotate(303deg) brightness(108%) contrast(118%);
+          filter: invert(72%) sepia(3%) saturate(3673%) hue-rotate(303deg) brightness(108%) contrast(118%);
+}
+footer .footer-links a:hover,
+footer .social-icons a:hover {
+  color: #ffc0cb;
+}
+footer .footer-links a {
+  display: block;
+}
+footer .footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: gray;
+}
+
+/*end footer-------------------------------------------------------------------*/
+.contacto {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 992px) {
+  .contacto img {
+    display: none;
+  }
+}
+
+form .form-control {
+  border-radius: 5px;
+}
+form .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #ff3838;
+}
+
+/*end contacto-----------------------------------------------------------------*/
+/*trabajos----------------------------------------------------------------------*/
+#gallery {
+  margin-top: 100px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img,
+.gallery-item .gallery-info {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.gallery-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px;
+  opacity: 0;
+}
+
+.gallery-info h3,
+.gallery-info h6 {
+  color: #fff;
+}
+
+.gallery-item:hover .gallery-info {
+  opacity: 1;
+}
+
+.gallery-item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*end trabajos-------------------------------------------------------------------*/
+/*nosotros-----------------------------------------------------------------------*/
+.nosotros {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nosotros .txtArea {
+  margin-bottom: 50px;
+}
+.nosotros .map {
+  width: 600px;
+  height: 465px;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.nosotros .map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (max-width: 992px) {
+  .nosotros .map {
+    width: 400px;
+    height: 265px;
+    background: #fff;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  }
+  .nosotros .map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+/*end nosotros-------------------------------------------------------------------*/
+/*homedeco-----------------------------------------------------------------------*/
+.homedeco {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff3838;
+}
+.homedeco img {
+  width: 300px;
+}
+.homedeco h1 {
+  font-weight: 800;
+  margin-top: 10px;
+  color: white;
+}
+.homedeco h2 {
+  font-weight: 500;
+  margin-top: -10px;
+  color: white;
+}
+.homedeco a {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.homedeco a:hover {
+  color: white;
+}
+
+/*end homedeco-------------------------------------------------------------------*/
