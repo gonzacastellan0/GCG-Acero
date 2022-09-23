@@ -23,6 +23,18 @@
     }
 }
 
+@mixin footerSocialIconsAlt {
+    .social-icons img {
+        width: 25px;
+    }
+
+    .social-icons img:hover {
+        filter: invert(50%) sepia(48%) saturate(6615%) hue-rotate(338deg) brightness(98%) contrast(105%);    
+    }
+}
+
+
+
 @mixin formContact {
     form {
         .form-control {
@@ -36,8 +48,21 @@
     }
 }
 
-@mixin homedecoSection {
+@mixin homedecoinfo {
     img {
-        width: 300px;
+        width: 15px;
+    }
+
+    img:hover {
+        width: 20px;    
+        transition: 0.1s;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: transparent;
     }
 }
+
+
+
+ 

@@ -18,6 +18,23 @@
     }
 }
 
+@mixin footerDarktxt {
+    .container h5,
+    .container h4 {
+        font-weight: 600;
+    }
+
+    .container a,
+    .container p {
+        font-weight: 500;
+    }
+
+    .container a,
+    .container p {
+        color: white;
+    }
+}
+
 @mixin mainSectionTxt {
     h1 {
         font-size: 30px;
@@ -37,13 +54,15 @@
 @mixin homedecoSectionTxt {
     h1 {
         font-weight: 800;
-        margin-top: 10px;
+        font-size: 75px;
         color: white;
     }
-    h2 {
+    h5 {
         font-weight: 500;
-        margin-top: -10px;
+        font-size: 20px;
         color: white;
+        margin-top: -15px;
+        margin-bottom: 50px;
     }
     
     a{
@@ -53,5 +72,23 @@
 
     a:hover {
         color: white;
+    }
+}
+
+@mixin homedecoinfoTxt {
+    h5 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    .txt-area {
+        width: 800px;
+    }
+
+    .title-btn {
+        color: black;
     }
 }
